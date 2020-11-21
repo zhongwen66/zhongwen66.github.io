@@ -6,10 +6,19 @@
     <description>Recent content in Sommerles on 中文</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/sommerles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020年11月21日</title>
+      <link>/posts/2020-11-21-homework/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020-11-21-homework/</guid>
+      <description>/* styling for this demo only */.outer {/* display: flex; */overflow-x: auto;margin: 0 auto;min-width: 600;}.inner {display: inline-block;}.outer .inner {width: 33.333%;padding: 5px;/*border: 1px dotted red;*/text-align:center;}.outer .inner .header,.outer .inner .text {/*padding: 10px;*/border: 1px dotted red;}.outer .inner .button {border: 1px solid gray;text-align: center;margin: 5px auto;}动画	$(function(){function uuidv4() {return &#39;xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx&#39;.</description>
+    </item>
     
     <item>
       <title>2020年11月14日</title>

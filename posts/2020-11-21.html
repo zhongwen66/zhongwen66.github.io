@@ -33,8 +33,8 @@
 <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@2.2/dist/hanzi-writer.min.js"></script>
 </header>
 <body>
-	<div id="character-target-div" class="outer">
-		<div class="inner" id="template">
+	<div id="character-target-div2" class="outer">
+		<div class="inner" id="template2">
 			<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" id="grid-background-target" class="text">
 			  <line x1="0" y1="0" x2="0" y2="200" stroke="#DDD" />
 			  <line x1="0" y1="0" x2="200" y2="0" stroke="#DDD" />
@@ -62,15 +62,15 @@
 			});
 		}
 
-		var characters = ['田', '羊', '午', '牛', '我', '和', '土'];
+		var characters = ['白', '绿', '红', '鹅', '是', '好', '家'];
 		var writers = []
 		for (var i = 0; i < characters.length; i++) {
-			var $clone = $('#template').clone();
+			var $clone = $('#template2').clone();
 			var target_id = uuidv4();
 			var button_id = uuidv4();
 			$clone.children().first().prop('id', target_id)
 			$clone.children().eq(1).prop('id', button_id)
-			$clone.appendTo('#character-target-div');
+			$clone.appendTo('#character-target-div2');
 
 			var writer = HanziWriter.create(target_id, characters[i], {
 				width: 200,
@@ -85,9 +85,7 @@
 				});
 			})(i);
 		}
-		console.log($('#template').parent().children().length);
-		if($('#template').parent().children().length == characters.length + 1)
-			$('#template').remove();
+		$('#template2').remove();
 	});
 </script>
 

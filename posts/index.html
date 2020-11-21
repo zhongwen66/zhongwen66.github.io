@@ -37,7 +37,7 @@
     <meta property="og:image" content="/images/fjord-287173_1920.jpg" />
 
 
-  <meta property="og:updated_time" content="2020-11-15T00:00:00&#43;00:00"/>
+  <meta property="og:updated_time" content="2020-11-21T00:00:00&#43;00:00"/>
 
 
 
@@ -124,6 +124,123 @@
 </div>
 
 <div id="main" role="main">
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2020-11-21 00:00:00 &#43;0000 UTC"><a href="/posts/2020-11-21-homework/">Nov 21, 2020</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/posts/2020-11-21-homework/" rel="bookmark" title="2020年11月21日" itemprop="url">2020年11月21日</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<html>
+<header>
+<style>
+/* styling for this demo only  */
+.outer {
+  /* display: flex; */
+  overflow-x: auto;
+  margin: 0 auto;
+  min-width: 600;
+}
+.inner {
+	display: inline-block;
+}
+.outer .inner {
+  width: 33.333%;
+  padding: 5px;
+  /*border: 1px dotted red;*/
+  text-align:center;
+}
+.outer .inner .header,
+.outer .inner .text {
+  /*padding: 10px;*/
+  border: 1px dotted red;
+}
+.outer .inner .button {
+  border: 1px solid gray;
+  text-align: center;
+  margin: 5px auto;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@2.2/dist/hanzi-writer.min.js"></script>
+</header>
+<body>
+	<div id="character-target-div2" class="outer">
+		<div class="inner" id="template2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" id="grid-background-target" class="text">
+			  <line x1="0" y1="0" x2="0" y2="200" stroke="#DDD" />
+			  <line x1="0" y1="0" x2="200" y2="0" stroke="#DDD" />
+			  <line x1="200" y1="0" x2="200" y2="200" stroke="#DDD" />
+			  <line x1="0" y1="200" x2="200" y2="200" stroke="#DDD" />
+			  <line x1="0" y1="0" x2="200" y2="200" stroke="#DDD" />
+			  <line x1="200" y1="0" x2="0" y2="200" stroke="#DDD" />
+			  <line x1="100" y1="0" x2="100" y2="200" stroke="#DDD" />
+			  <line x1="0" y1="100" x2="200" y2="100" stroke="#DDD" />
+			</svg>
+
+			<div>
+				<button id="animate-button" class="button">动画</button>
+			</div>			
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">	
+    $(function(){
+		function uuidv4() {
+			return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+				var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+				return v.toString(16);
+			});
+		}
+
+		var characters = ['白', '绿', '红', '鹅', '是', '好', '家'];
+		var writers = []
+		for (var i = 0; i < characters.length; i++) {
+			var $clone = $('#template2').clone();
+			var target_id = uuidv4();
+			var button_id = uuidv4();
+			$clone.children().first().prop('id', target_id)
+			$clone.children().eq(1).prop('id', button_id)
+			$clone.appendTo('#character-target-div2');
+
+			var writer = HanziWriter.create(target_id, characters[i], {
+				width: 200,
+				height: 200,
+				padding: 5,
+			});
+			writers.push(writer);
+
+			(function(index) {
+				document.getElementById(button_id).addEventListener('click', function() {
+					writers[index].animateCharacter();
+				});
+			})(i);
+		}
+		$('#template2').remove();
+	});
+</script>
+
+</html>
+
+  </div>
+</article>
 
 <article class="hentry">
   <header>

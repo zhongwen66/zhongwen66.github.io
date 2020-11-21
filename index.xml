@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中文</title>
+    <link>/</link>
+    <description>Recent content on 中文</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020年11月14日</title>
+      <link>/posts/2020-11-15-homework/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020-11-15-homework/</guid>
+      <description>/* styling for this demo only */.outer {/* display: flex; */overflow-x: auto;margin: 0 auto;min-width: 600;}.inner {display: inline-block;}.outer .inner {width: 33.333%;padding: 5px;/*border: 1px dotted red;*/text-align:center;}.outer .inner .header,.outer .inner .text {/*padding: 10px;*/border: 1px dotted red;}.outer .inner .button {border: 1px solid gray;text-align: center;margin: 5px auto;}动画	$(function(){var characters = [&#39;田&#39;, &#39;羊&#39;, &#39;午&#39;, &#39;牛&#39;, &#39;我&#39;, &#39;和&#39;, &#39;土&#39;];var writers = []for (var i = 0; i </description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/about/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This is a blog for tracking homework, school events, etc.</description>
+    </item>
+    
+  </channel>
+</rss>
